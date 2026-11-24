@@ -1,0 +1,13 @@
+file_name,rows,columns,missing_cells,duplicate_rows
+category_revenue.csv,72,4,0,0
+clean_orders.csv,99441,11,4908,0
+customer_delivery_summary.csv,93350,4,0,0
+delivery_scenario.csv,96470,13,15,0
+monthly_delivery_trend.csv,23,6,2,0
+monthly_performance.csv,23,6,2,0
+qualified_sellers.csv,627,6,0,0
+review_analysis.csv,95824,4,0,0
+rfm.csv,93358,9,0,0
+state_delivery_performance.csv,27,5,0,0
+state_revenue.csv,27,4,0,0
+validation_summary.csv,7,2,0,0

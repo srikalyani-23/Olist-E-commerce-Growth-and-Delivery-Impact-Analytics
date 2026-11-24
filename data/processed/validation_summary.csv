@@ -1,0 +1,8 @@
+Check,Result
+Delivery order count,True
+Late + Non-Late count,True
+Unique orders in delivery dataset,True
+Review score range,True
+Revenue is non-negative,True
+Delivery rate total,True
+Revenue reconciliation,True
