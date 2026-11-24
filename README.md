@@ -1,110 +1,27 @@
-# Olist-E-commerce-Growth-and-Delivery-Impact-Analytics
-An end-to-end e-commerce data analysis project exploring customer behavior, sales performance, payment patterns, and delivery operations using the Olist Brazilian E-Commerce dataset.
+# 🛒 Olist E-Commerce Data Analysis
 
-## Project Overview
+An end-to-end exploratory data analysis project using the **Brazilian E-Commerce Public Dataset by Olist** to investigate customer behavior, order performance, product categories, seller activity, payment patterns, and delivery operations.
 
-The objective of this project is to analyze e-commerce transactional data to understand business performance, identify operational inefficiencies, and uncover opportunities for business growth.
+## 📌 Project Overview
 
-The analysis focuses on customer purchasing behavior, revenue performance, order fulfillment, delivery efficiency, and payment preferences to generate actionable business insights.
+This project focuses on exploring and understanding a real-world e-commerce dataset containing information about customers, orders, products, sellers, payments, reviews, and geographical locations.
 
-## Business Objectives
+The objective is to inspect raw datasets, understand their structure, identify data quality issues, validate relationships between datasets, and prepare reliable data for further business analysis.
 
-- Analyze overall e-commerce sales and revenue performance.
-- Understand customer purchasing and repeat purchase behavior.
-- Evaluate order delivery performance and identify late deliveries.
-- Analyze payment method preferences.
-- Examine product and seller-related business data.
-- Identify opportunities to improve customer experience and operational efficiency.
+## 🎯 Project Objectives
 
-## Dataset
+- Explore and understand multiple interconnected e-commerce datasets.
+- Perform data quality checks and identify inconsistencies.
+- Analyze customer, order, product, seller, and payment data.
+- Investigate customer reviews and delivery performance.
+- Validate primary and foreign key relationships.
+- Clean and prepare datasets for downstream analysis.
+- Extract meaningful business insights from e-commerce data.
 
-**Source:** Olist Brazilian E-Commerce Public Dataset
-
-The dataset contains multiple interconnected CSV files covering different aspects of the e-commerce business.
-
-| Dataset | Description |
-|---|---|
-| Customers | Customer information and locations |
-| Geolocation | Geographic coordinates and zip codes |
-| Orders | Order status and timestamps |
-| Order Items | Products purchased in each order |
-| Payments | Payment types and transaction values |
-| Reviews | Customer feedback and review scores |
-| Products | Product details and categories |
-| Sellers | Seller information and locations |
-| Category Translation | Portuguese-to-English category mapping |
-
-## Tools & Technologies
-
-- **Python** – Data analysis and processing
-- **Pandas** – Data manipulation and cleaning
-- **NumPy** – Numerical operations
-- **Matplotlib / Seaborn** – Data visualization (where used)
-- **Jupyter Notebook / Python Scripts** – Analysis environment
-
-## Project Workflow
-
-1. **Data Inspection:** Examined individual datasets, their structure, columns, and data types.
-2. **Data Validation:** Investigated primary keys, relationships, and data consistency.
-3. **Data Cleaning:** Prepared datasets for analysis and handled relevant data quality issues.
-4. **Exploratory Data Analysis:** Analyzed customer behavior, revenue, payments, and delivery performance.
-5. **KPI Development:** Calculated key business performance indicators.
-6. **Business Insights:** Interpreted findings and identified areas for improvement.
-
-## Key Business Metrics & Findings
-
-### 1. Customer Analysis
-
-- Total Unique Customers: 96,096
-- Repeat Customers: 2,997
-- Repeat Customer Rate: 3.12%
-
-**Insight:** The low repeat customer rate indicates an opportunity to strengthen customer retention and encourage repeat purchases.
-
-### 2. Revenue Analysis
-
-- Total Product Revenue: R$13,591,643.70
-- Delivered Product Revenue: R$13,221,498.11
-- Average Order Value: R$137.75
-- Delivered Average Order Value: R$137.04
-
-**Insight:** Revenue analysis provides a baseline for evaluating sales performance and identifying opportunities to improve order value.
-
-### 3. Delivery Performance
-
-- Total Orders: 99,441
-- Delivered Orders: 96,478
-- Average Delivery Time: 12.56 days
-- Late Orders: 7,826
-- Late Delivery Rate: 8.11%
-
-**Insight:** Delivery delays represent an opportunity to improve logistics operations, delivery planning, and customer satisfaction.
-
-### 4. Payment Analysis
-
-| Payment Method | Transactions | Share |
-|---|---:|---:|
-| Credit Card | 76,795 | 73.92% |
-| Boleto | 19,784 | 19.04% |
-| Voucher | 5,775 | 5.56% |
-| Debit Card | 1,529 | 1.47% |
-
-**Insight:** Credit cards dominate customer payment preferences, accounting for approximately 74% of payment records.
-
-## Business Recommendations
-
-Based on the analysis:
-
-- **Customer Retention:** Introduce loyalty programs and targeted campaigns to encourage repeat purchases.
-- **Delivery Optimization:** Investigate delayed orders and improve logistics coordination.
-- **Revenue Growth:** Explore strategies to increase average order value through product recommendations and cross-selling.
-- **Payment Experience:** Continue optimizing the dominant credit card payment experience while supporting alternative payment methods.
-- **Customer Experience:** Monitor delivery performance and customer feedback to identify service improvement opportunities.
-
-## Repository Structure
+## 🗂️ Project Structure
 
 ```text
-olist_project/
+olist-ecommerce-analysis/
 │
 ├── data/
 │   └── raw/
@@ -131,32 +48,139 @@ olist_project/
 ├── inspect_sellers.py
 ├── investigate_reviews.py
 ├── validate_keys.py
+│
 ├── data_dictionary.md
 └── README.md
 ```
 
-## Key Learnings
+## 📊 Dataset Description
 
-Through this project, I gained practical experience in:
+The project uses nine CSV files from the Olist Brazilian E-Commerce Public Dataset.
 
-- Working with multiple related datasets.
-- Data inspection and validation.
-- Data cleaning and preprocessing.
-- Exploratory Data Analysis (EDA).
-- Business KPI calculation and interpretation.
-- Translating analytical findings into business recommendations.
+| Dataset | Description |
+|---|---|
+| Customers | Customer details and location IDs |
+| Geolocation | Brazilian ZIP code geographical information |
+| Order Items | Products purchased within each order |
+| Order Payments | Payment methods and transaction values |
+| Order Reviews | Customer ratings and review comments |
+| Orders | Order status and important timestamps |
+| Products | Product attributes and category information |
+| Sellers | Seller details and location IDs |
+| Category Translation | Portuguese-to-English category mapping |
 
-## Dataset Source
+## 🛠️ Technologies Used
 
-Olist Brazilian E-Commerce Public Dataset:
+- **Python** – Data exploration and cleaning
+- **Pandas** – Data manipulation and processing
+- **NumPy** – Numerical operations
+- **Git & GitHub** – Version control and project management
 
-https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+## 🔍 Project Workflow
 
-## Author
+### 1. Dataset Inspection
+- Examine dataset dimensions and column names.
+- Understand data types and structures.
+- Identify missing values and duplicate records.
+- Inspect individual datasets.
 
-**Kalyani Srivastava**
+### 2. Data Quality Assessment
+- Investigate missing and inconsistent values.
+- Examine duplicate records.
+- Check data integrity and consistency.
+- Investigate customer review data.
 
-B.Tech Information Technology | Aspiring Data Analyst
+### 3. Data Cleaning
+- Clean order-related records.
+- Handle data quality issues.
+- Prepare datasets for further analysis.
 
-GitHub: https://github.com/srikalyani-23
+### 4. Data Validation
+- Validate primary key uniqueness.
+- Check foreign key relationships.
+- Investigate relationships between interconnected datasets.
 
+### 5. Business Analysis
+Prepare the cleaned datasets for analysis of:
+- Customer purchasing behavior
+- Order and revenue performance
+- Product category performance
+- Seller performance
+- Payment distribution
+- Delivery efficiency
+- Customer satisfaction
+
+## 📁 Documentation
+
+The repository includes:
+
+- `data_dictionary.md` – Dataset and column-level documentation.
+- `README.md` – Project overview, structure, and workflow.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Python 3.x
+- Pandas
+- NumPy
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git clone <YOUR_REPOSITORY_URL>
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd olist-ecommerce-analysis
+```
+
+**3. Install dependencies**
+
+```bash
+pip install pandas numpy
+```
+
+**4. Run the inspection scripts**
+
+```bash
+python check_dataset.py
+python inspect_customers.py
+python inspect_orders.py
+python validate_keys.py
+```
+
+Other inspection and cleaning scripts can be executed individually.
+
+## 💡 Expected Business Value
+
+The analysis aims to support better business understanding through:
+
+- Identifying customer purchasing patterns.
+- Evaluating revenue and order performance.
+- Understanding payment preferences.
+- Monitoring delivery performance.
+- Examining customer satisfaction.
+- Identifying potential data quality issues.
+
+## 📌 Dataset Source
+
+Brazilian E-Commerce Public Dataset by Olist.
+
+Source: Kaggle – Brazilian E-Commerce Public Dataset by Olist.
+
+## 👩‍💻 Author
+
+**Kalyani**
+
+B.Tech – Information Technology | Aspiring Data Analyst
+
+GitHub: [Your GitHub Profile](https://github.com/)
+
+---
+
+*This project is developed for practical learning and portfolio demonstration, focusing on real-world e-commerce data exploration, data quality assessment, and business analysis.*
